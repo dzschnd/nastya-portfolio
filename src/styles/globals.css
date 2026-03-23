@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+:root {
+	color-scheme: dark;
+	font-family:
+		Manrope,
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		sans-serif;
+	background: #1a1a1a;
+}
+
+html {
+	background:
+		radial-gradient(circle at top left, rgba(255, 120, 233, 0.14), transparent 26%),
+		radial-gradient(circle at top right, rgba(255, 120, 233, 0.1), transparent 18%),
+		#1a1a1a;
+}
+
+body {
+	min-height: 100vh;
+	background: transparent;
+	color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+}
