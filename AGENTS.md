@@ -1,0 +1,10 @@
+- This project is a designer portfolio website built with Astro.
+- Prefer simple, visually strong solutions and explain decisions in plain language.
+- Keep responses short and focused on what will change on the website.
+- Use Tailwind for styling. Tailwind is already configured.
+- Use Astro files for pages and layouts when appropriate.
+- Use React `.tsx` components in `src/components` for reusable UI or interactive parts.
+- Split large UI into smaller components when it improves clarity and reuse.
+- Preserve the existing visual direction unless the user asks for a redesign.
+- Before making broad structural or visual changes, explain the plan briefly.
+- After making changes, summarize what changed in simple terms and list the edited files.
