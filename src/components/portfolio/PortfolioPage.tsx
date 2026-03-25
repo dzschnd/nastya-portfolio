@@ -54,11 +54,8 @@ export default function PortfolioPage() {
 			<main className="px-6 pb-14 md:px-10 md:pb-16 lg:px-16 lg:pb-20">
 				<div className="mx-auto mb-8 flex max-w-7xl items-end justify-between gap-4">
 					<div>
-						<p className="text-sm uppercase tracking-[0.28em] text-white/36">
-							Selected cases
-						</p>
-						<h2 className="mt-2 text-3xl font-semibold tracking-[-0.04em] text-white md:text-4xl">
-							Из макета в живой сайт
+						<h2 className="text-3xl font-semibold tracking-[-0.04em] text-white md:text-4xl">
+							кейсы
 						</h2>
 					</div>
 					<p className="hidden max-w-md text-sm leading-6 text-white/44 md:block">
