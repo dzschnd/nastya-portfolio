@@ -31,8 +31,7 @@ export default function PortfolioHeader() {
 		<header className="relative overflow-hidden px-6 pb-14 pt-10 md:px-10 md:pb-18 md:pt-14 lg:px-16 lg:pt-16">
 			<div className="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-center md:gap-12">
 				<div className="relative shrink-0">
-					<div className="absolute inset-0 scale-110 rounded-full bg-[radial-gradient(circle,rgba(255,120,233,0.32),transparent_65%)] blur-2xl" />
-					<div className="relative size-28 overflow-hidden rounded-full ring-1 ring-white/10 shadow-[0_0_40px_rgba(255,120,233,0.22)] md:size-32 lg:size-36">
+					<div className="relative size-36 overflow-hidden rounded-full ring-1 ring-white/10 md:size-40 lg:size-44">
 						<img
 							src={profileImage.src}
 							alt="Анастасия Штоц"
@@ -46,8 +45,7 @@ export default function PortfolioHeader() {
 						<h1 className="text-4xl font-semibold tracking-[-0.04em] text-white md:text-5xl">
 							Анастасия Штоц
 						</h1>
-						<div className="flex items-center gap-3">
-							<div className="h-px w-9 bg-gradient-to-r from-[#ff78e9] to-transparent" />
+						<div className="flex items-center">
 							<p className="text-sm font-medium uppercase tracking-[0.28em] text-[#ff92ee] md:text-[15px]">
 								Product Designer
 							</p>
