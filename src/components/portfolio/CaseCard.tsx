@@ -18,15 +18,15 @@ export default function CaseCard({
 }: CaseCardProps) {
 	return (
 		<article
-			className="group overflow-hidden rounded-[28px] border border-white/7 bg-[#111111] shadow-[0_18px_60px_rgba(0,0,0,0.2)] transition duration-500 hover:-translate-y-1 hover:border-[#ff78e9]/20 hover:shadow-[0_24px_72px_rgba(0,0,0,0.28),0_0_40px_rgba(255,120,233,0.08)]"
+			className="group overflow-hidden rounded-[28px] border border-white/5 bg-[#111111] shadow-[0_18px_60px_rgba(0,0,0,0.2)] transition duration-500 hover:border-white/8 hover:shadow-[0_24px_72px_rgba(0,0,0,0.24)]"
 			style={{ backgroundImage: gradient } as CSSProperties}
 		>
-			<div className="relative aspect-[1.92/1] overflow-hidden">
+			<div className="relative aspect-[1.45/1] overflow-hidden">
 				<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_45%)]" />
 				<img
 					src={image}
 					alt={title}
-					className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.025]"
+					className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.06]"
 				/>
 			</div>
 

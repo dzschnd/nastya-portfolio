@@ -1,5 +1,5 @@
 import {
-	DribbbleIcon,
+	DprofileIcon,
 	LinkedinIcon,
 	ResumeIcon,
 	TelegramIcon,
@@ -7,7 +7,11 @@ import {
 import SocialChip from "./SocialChip";
 
 const socialLinks = [
-	{ label: "CV", href: "#", Icon: ResumeIcon },
+	{
+		label: "CV",
+		href: "https://drive.google.com/file/d/1er6KaFUhehusmBUCHQTsf-X5gsSJIixx/view?usp=sharing",
+		Icon: ResumeIcon,
+	},
 	{
 		label: "Telegram",
 		href: "https://t.me/NastyaSchtoz",
@@ -19,9 +23,9 @@ const socialLinks = [
 		Icon: LinkedinIcon,
 	},
 	{
-		label: "dprofile",
+		label: "Dprofile",
 		href: "https://dprofile.ru/anastasiia.shtots",
-		Icon: DribbbleIcon,
+		Icon: DprofileIcon,
 	},
 ];
 
