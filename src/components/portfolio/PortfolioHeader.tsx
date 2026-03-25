@@ -46,7 +46,7 @@ export default function PortfolioHeader() {
 
 				<div className="flex-1">
 					<div className="mb-5 flex flex-col gap-1.5">
-						<h1 className="text-4xl font-semibold tracking-[-0.04em] text-white md:text-5xl">
+						<h1 className="text-[32px] font-semibold tracking-[-0.025em] text-white md:text-[42px]">
 							Анастасия Штоц
 						</h1>
 						<div className="flex items-center">
