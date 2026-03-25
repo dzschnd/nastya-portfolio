@@ -8,9 +8,21 @@ import SocialChip from "./SocialChip";
 
 const socialLinks = [
 	{ label: "CV", href: "#", Icon: ResumeIcon },
-	{ label: "Telegram", href: "#", Icon: TelegramIcon },
-	{ label: "LinkedIn", href: "#", Icon: LinkedinIcon },
-	{ label: "Dribbble", href: "#", Icon: DribbbleIcon },
+	{
+		label: "Telegram",
+		href: "https://t.me/NastyaSchtoz",
+		Icon: TelegramIcon,
+	},
+	{
+		label: "LinkedIn",
+		href: "https://www.linkedin.com/in/anastasiia-shtots/",
+		Icon: LinkedinIcon,
+	},
+	{
+		label: "dprofile",
+		href: "https://dprofile.ru/anastasiia.shtots",
+		Icon: DribbbleIcon,
+	},
 ];
 
 export default function PortfolioFooter() {

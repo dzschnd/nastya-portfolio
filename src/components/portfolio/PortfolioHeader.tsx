@@ -9,15 +9,26 @@ import SocialChip from "./SocialChip";
 
 const socialLinks = [
 	{ label: "CV", href: "#", Icon: ResumeIcon },
-	{ label: "Telegram", href: "#", Icon: TelegramIcon },
-	{ label: "LinkedIn", href: "#", Icon: LinkedinIcon },
-	{ label: "Dribbble", href: "#", Icon: DribbbleIcon },
+	{
+		label: "Telegram",
+		href: "https://t.me/NastyaSchtoz",
+		Icon: TelegramIcon,
+	},
+	{
+		label: "LinkedIn",
+		href: "https://www.linkedin.com/in/anastasiia-shtots/",
+		Icon: LinkedinIcon,
+	},
+	{
+		label: "dprofile",
+		href: "https://dprofile.ru/anastasiia.shtots",
+		Icon: DribbbleIcon,
+	},
 ];
 
 export default function PortfolioHeader() {
 	return (
 		<header className="relative overflow-hidden px-6 pb-14 pt-10 md:px-10 md:pb-18 md:pt-14 lg:px-16 lg:pt-16">
-			<div className="pointer-events-none absolute inset-x-0 top-0 h-80 bg-[radial-gradient(circle_at_20%_0%,rgba(255,120,233,0.2),transparent_45%),radial-gradient(circle_at_70%_10%,rgba(255,120,233,0.11),transparent_35%)]" />
 			<div className="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-center md:gap-12">
 				<div className="relative shrink-0">
 					<div className="absolute inset-0 scale-110 rounded-full bg-[radial-gradient(circle,rgba(255,120,233,0.32),transparent_65%)] blur-2xl" />
@@ -44,9 +55,10 @@ export default function PortfolioHeader() {
 					</div>
 
 					<p className="max-w-2xl text-base leading-7 text-white/68 md:text-[17px]">
-						2+ года опыта в tech-продуктовых командах. Проектирую
-						спокойные, понятные интерфейсы для сложных сервисов и люблю
-						доводить продукт до ощущения собранности.
+						Продуктовый дизайнер с опытом в AI-платформах, web-сервисах и
+						digital-продуктах. Проектирую интерфейсы, пользовательские
+						сценарии и визуальные системы, превращая сложные идеи в понятные
+						и цельные решения.
 					</p>
 
 					<div className="mt-6 flex flex-wrap gap-2.5">
