@@ -9,6 +9,5 @@ export default defineConfig({
 	vite: {
 		plugins: [tailwindcss()],
 	},
-	site: "https://astronaut.github.io",
-	base: "/nastya-portfolio"
+	site: "https://anastasiiashtots.com/",
 });
