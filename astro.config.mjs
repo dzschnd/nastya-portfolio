@@ -9,4 +9,6 @@ export default defineConfig({
 	vite: {
 		plugins: [tailwindcss()],
 	},
+	site: "site: 'https://astronaut.github.io'",
+	base: "/nastya-portfolio"
 });
