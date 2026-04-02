@@ -12,6 +12,7 @@ const caseStudies = [
 			"Самокат. Редизайн процесса сборки заказов для сотрудников даркстора: меньше ошибок, быстрее сценарии, спокойнее рабочий ритм.",
 		tags: ["#b2b", "#мобильное приложение", "#логистика"],
 		image: caseOne.src,
+		href: "/projects/dubsmart",
 		gradient:
 			"linear-gradient(147deg, rgba(252, 231, 243, 1) 0%, rgba(243, 232, 255, 1) 100%)",
 	},
@@ -49,19 +50,11 @@ export default function PortfolioPage() {
 		<div className="min-h-screen bg-[#1a1a1a] text-white">
 			<PortfolioHeader />
 
-			<div className="mx-auto mb-8 h-px max-w-7xl bg-gradient-to-r from-transparent via-[#ff78e9]/20 to-transparent px-6 md:px-10 lg:px-16" />
-
 			<main className="px-6 pb-14 md:px-10 md:pb-16 lg:px-16 lg:pb-20">
-				<div className="mx-auto mb-8 flex max-w-7xl items-end justify-between gap-4">
-					<div>
-						<h2 className="text-3xl font-semibold tracking-[-0.04em] text-white md:text-4xl">
-							Кейсы
-						</h2>
-					</div>
-					<p className="hidden max-w-md text-sm leading-6 text-white/44 md:block">
-						Сетка, карточки и общая атмосфера перенесены из Figma Make, но
-						теперь это уже нормальная структура для Astro-проекта.
-					</p>
+				<div className="mx-auto mb-8 max-w-7xl">
+					<h2 className="text-3xl font-semibold tracking-[-0.04em] text-white md:text-4xl">
+						Кейсы
+					</h2>
 				</div>
 
 				<div className="mx-auto grid max-w-7xl grid-cols-1 gap-5 md:grid-cols-2">

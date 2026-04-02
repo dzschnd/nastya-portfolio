@@ -7,6 +7,7 @@ interface CaseCardProps {
 	tags: string[];
 	image: string;
 	gradient: string;
+	href?: string;
 }
 
 export default function CaseCard({
@@ -15,14 +16,15 @@ export default function CaseCard({
 	tags,
 	image,
 	gradient,
+	href = "#",
 }: CaseCardProps) {
 	return (
-		<article
-			className="group overflow-hidden rounded-[28px] border border-white/5 bg-[#111111] shadow-[0_18px_60px_rgba(0,0,0,0.2)] transition duration-500 hover:border-white/8 hover:shadow-[0_24px_72px_rgba(0,0,0,0.24)]"
+		<a
+			href={href}
+			className="group overflow-hidden rounded-[28px] border border-zinc-700 bg-[#111111] transition duration-500 hover:border-zinc-600"
 			style={{ backgroundImage: gradient } as CSSProperties}
 		>
 			<div className="relative aspect-[1.45/1] overflow-hidden">
-				<div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_45%)]" />
 				<img
 					src={image}
 					alt={title}
@@ -49,14 +51,11 @@ export default function CaseCard({
 					{description}
 				</p>
 
-				<a
-					href="#"
-					className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-white/62 transition duration-300 hover:text-[#ff92ee]"
-				>
+				<div className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-white/62 transition duration-300 group-hover:text-[#ff92ee]">
 					<span>Смотреть кейс</span>
 					<ArrowRightIcon className="size-4" />
-				</a>
+				</div>
 			</div>
-		</article>
+		</a>
 	);
 }

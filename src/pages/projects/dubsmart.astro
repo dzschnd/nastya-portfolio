@@ -1,0 +1,346 @@
+---
+import heroImage from "../../assets/portfolio/4b262b3322df4cdbb9c8e6913ced65f5cd1396cb.png";
+import flowImage from "../../assets/portfolio/bd501ec81e1d8da37cd5381dcb4debcff48f1521.png";
+import processImage from "../../assets/portfolio/5a863362054eae4bef26d7f08d1b4cd0155eebec.png";
+import Layout from "../../layouts/Layout.astro";
+
+const meta = ["AI", "SaaS", "Web", "UX/UI", "2024–2026"];
+
+const metrics = [
+	{
+		label: "Охват работы",
+		value: [
+			"6 AI-инструментов",
+			"dashboard, editor, billing, settings",
+			"desktop + mobile",
+		],
+	},
+	{
+		label: "Продукт",
+		value: "2 года поддержки, редизайна и дизайн-ревью",
+	},
+	{
+		label: "Контекст",
+		value: ["500 000+ пользователей", "33 языка", "light + dark themes"],
+	},
+];
+
+const roleItems = [
+	"Редизайн всей платформы",
+	"6 AI-инструментов в зоне ответственности",
+	"Дизайн-система со светлой и тёмной темами",
+	"Dashboard, project list, create flow, editor, settings, billing",
+	"Desktop и mobile версии",
+	"2 года поддержки, доработок и дизайн-ревью",
+];
+
+const painPoints = [
+	"Интерфейс плохо масштабировался при большом количестве дорожек",
+	"Длинные текстовые блоки было сложно считывать без чёткой иерархии",
+	"Управление фильтрами, режимами и действиями было фрагментарным",
+	"Студия не была адаптирована под новую логику мультиязычной работы",
+];
+
+const stages = [
+	{
+		title: "Новая структура AI Dubbing Studio",
+		description:
+			"Я перестроила студию вокруг реальных рабочих сценариев: добавила трёхколоночную структуру для оригинала, перевода и локализованного текста, чтобы пользователю было проще сравнивать версии и работать с контентом.",
+		image: flowImage.src,
+	},
+	{
+		title: "Видео и таймлайн в одном контуре",
+		description:
+			"Видеопревью и временная шкала были встроены в единый рабочий сценарий. Это позволило быстрее отслеживать синхронность, работать с дорожками и принимать решения без постоянных переключений между разными зонами интерфейса.",
+		image: processImage.src,
+	},
+	{
+		title: "Управление дорожками и новыми функциями",
+		description:
+			"Я интегрировала в интерфейс новые действия без перегрузки: регенерацию фраз, замену голосов, фильтры по типу контента и мультиязычную навигацию. Основная задача заключалась в том, чтобы сохранить понятность даже при росте функциональности.",
+		image: heroImage.src,
+	},
+	{
+		title: "Читабельность и визуальная иерархия",
+		description:
+			"Редизайн усилил типографику, акценты и структуру контента. Интерфейс стал легче восприниматься, а ключевые действия — быстрее считываться в сложных AI-сценариях.",
+		image: flowImage.src,
+	},
+];
+
+const results = [
+	{ value: "6 AI-инструментов", label: "в единой UX/UI-системе", tone: "accent" },
+	{ value: "2 года", label: "поддержки, редизайна и дизайн-ревью", tone: "dark" },
+	{ value: "Light + Dark", label: "themes and scalable design system", tone: "light" },
+	{ value: "Desktop + mobile", label: "единый продуктовый опыт", tone: "accent-soft" },
+	{ value: "Положительный фидбек", label: "от команды и пользователей", tone: "dark" },
+];
+
+const learnings = [
+	"Создавать дизайн-систему с нуля и поддерживать её в условиях быстро меняющихся требований",
+	"Работать с комплексными мультиязычными сценариями, связанными с видео, текстом и звуком",
+	"Находить баланс между визуальной чистотой интерфейса и техническими ограничениями",
+	"Глубже понимать handoff-процесс и эффективнее коммуницировать с разработчиками",
+	"Развивать интерфейс в условиях активного роста продукта и появления новых AI-функций",
+];
+
+const toneClasses = {
+	accent: "bg-[linear-gradient(135deg,#ff78e9_0%,#ffb8f4_100%)] text-[#181818]",
+	"accent-soft": "bg-[linear-gradient(135deg,rgba(255,120,233,0.18)_0%,rgba(255,184,244,0.08)_100%)] text-white border border-[#ff78e9]/20",
+	dark: "bg-[#111111] text-white border border-white/6",
+	light: "bg-[#f6f1ff] text-[#1a1a1a]",
+};
+---
+
+<Layout title="Dubsmart — Анастасия Штоц">
+	<div class="min-h-screen bg-[#1a1a1a] text-white">
+		<main class="px-6 pb-16 pt-8 md:px-10 lg:px-16 lg:pb-24">
+			<div class="mx-auto max-w-6xl">
+				<a
+					href="/"
+					class="inline-flex items-center gap-2 text-sm text-white/48 transition hover:text-white/78"
+				>
+					<span>←</span>
+					<span>Назад к портфолио</span>
+				</a>
+
+				<section class="pt-8 md:pt-12">
+					<h1 class="max-w-4xl text-[32px] font-semibold tracking-[-0.05em] text-white md:text-[52px]">
+						DubSmart — AI-платформа для создания и локализации мультимедийного контента
+					</h1>
+
+					<div class="mt-6 flex flex-wrap items-center gap-3">
+						{
+							meta.map((item) => (
+								<span class="rounded-full border border-white/8 bg-white/4 px-4 py-2 text-sm text-white/74">
+									{item}
+								</span>
+							))
+						}
+					</div>
+				</section>
+
+				<section class="mt-8 overflow-hidden rounded-[36px] border border-white/6 bg-[radial-gradient(circle_at_top,rgba(255,120,233,0.1),transparent_35%),#111111]">
+					<img
+						src={heroImage.src}
+						alt="Dubsmart cover"
+						class="h-full w-full object-cover"
+					/>
+				</section>
+
+				<section class="mt-10 max-w-4xl">
+					<p class="text-2xl leading-tight tracking-[-0.03em] text-white md:text-3xl">
+						DubSmart объединяет инструменты для озвучивания, дубляжа,
+						клонирования голосов, генерации изображений и субтитров в одной
+						платформе. Моя работа была сосредоточена на редизайне системы,
+						UX/UI ключевых сценариев и развитии продукта в течение двух лет.
+					</p>
+				</section>
+
+				<section class="mt-10 grid gap-4 md:grid-cols-3">
+					{
+						metrics.map((item) => (
+							<div class="rounded-[28px] border border-white/6 bg-white/[0.03] p-6">
+								<p class="text-sm uppercase tracking-[0.22em] text-white/38">
+									{item.label}
+								</p>
+								{Array.isArray(item.value) ? (
+									<div class="mt-4 space-y-2 text-base leading-6 text-white/76">
+										{item.value.map((line) => <p>• {line}</p>)}
+									</div>
+								) : (
+									<p class="mt-4 text-4xl font-semibold tracking-[-0.04em] text-white">
+										{item.value}
+									</p>
+								)}
+							</div>
+						))
+					}
+				</section>
+
+				<section class="mt-12 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+					<div>
+						<p class="text-sm uppercase tracking-[0.24em] text-[#ff92ee]">
+							Контекст
+						</p>
+						<p class="mt-4 text-lg leading-8 text-white/72 md:text-xl">
+							DubSmart — это AI-платформа для создания и локализации
+							мультимедийного контента. Пользователи могут озвучивать видео,
+							создавать голосовые клоны, генерировать субтитры и работать с
+							мультиязычным контентом в рамках одной системы.
+						</p>
+					</div>
+
+					<div class="overflow-hidden rounded-[32px] border border-white/6 bg-[#111111]">
+						<img
+							src={flowImage.src}
+							alt="Dubsmart flow"
+							class="h-full w-full object-cover"
+						/>
+					</div>
+				</section>
+
+				<section class="mt-16 max-w-4xl">
+					<p class="text-sm uppercase tracking-[0.24em] text-[#ff92ee]">
+						Вызов
+					</p>
+					<h2 class="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white md:text-4xl">
+						Как сделать сложную AI-платформу более понятной и масштабируемой
+					</h2>
+					<p class="mt-6 text-lg leading-8 text-white/72">
+						По мере роста DubSmart внутри платформы появлялось всё больше
+						инструментов, сценариев и пользовательских состояний. Нужно было
+						не просто поддерживать визуальную целостность, а выстроить
+						устойчивую UX/UI-систему, которая выдерживает рост продукта,
+						новые функции и сложные рабочие процессы.
+					</p>
+				</section>
+
+				<section class="mt-16 grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+					<div>
+						<p class="text-sm uppercase tracking-[0.24em] text-[#ff92ee]">
+							Моя роль
+						</p>
+						<h2 class="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white">
+							End-to-end работа над продуктом
+						</h2>
+						<p class="mt-4 text-lg leading-8 text-white/70">
+							Я отвечала за UX/UI-дизайн платформы и была вовлечена во все
+							ключевые этапы — от концепта и проектирования новых сценариев до
+							редизайна студии дубляжа, развития дизайн-системы, поддержки
+							новых функций и дизайн-ревью с разработчиками.
+						</p>
+					</div>
+
+					<div class="rounded-[32px] border border-white/6 bg-white/[0.03] p-6 md:p-8">
+						<ul class="space-y-4 text-base leading-7 text-white/78">
+							{
+								roleItems.map((item) => (
+									<li class="flex gap-3">
+										<span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ff92ee]" />
+										<span>{item}</span>
+									</li>
+								))
+							}
+						</ul>
+					</div>
+				</section>
+
+				<section class="mt-16">
+					<p class="text-sm uppercase tracking-[0.24em] text-[#ff92ee]">
+						Проблемы
+					</p>
+					<div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+						{
+							painPoints.map((item) => (
+								<div class="rounded-[28px] border border-white/6 bg-white/[0.03] p-6 text-base leading-7 text-white/76">
+									{item}
+								</div>
+							))
+						}
+					</div>
+				</section>
+
+				<section class="mt-16 max-w-4xl">
+					<p class="text-sm uppercase tracking-[0.24em] text-[#ff92ee]">
+						Главный акцент
+					</p>
+					<h2 class="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white md:text-4xl">
+						Редизайн AI Dubbing Studio
+					</h2>
+					<p class="mt-6 text-lg leading-8 text-white/72">
+						Изначально AI Dubbing Studio создавался как MVP в сжатые сроки.
+						Интерфейс был перегружен, слабо масштабировался, имел слабую
+						визуальную иерархию и плохо поддерживал новую логику
+						мультиязычных дорожек. Главной задачей кейса стал его системный
+						редизайн.
+					</p>
+				</section>
+
+				<section class="mt-16 space-y-16">
+					{
+						stages.map((stage) => (
+							<div class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+								<div>
+									<p class="text-sm uppercase tracking-[0.24em] text-[#ff92ee]">
+										Решение
+									</p>
+									<h2 class="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white">
+										{stage.title}
+									</h2>
+									<p class="mt-4 text-lg leading-8 text-white/72">
+										{stage.description}
+									</p>
+								</div>
+								<div class="overflow-hidden rounded-[32px] border border-white/6 bg-[#111111]">
+									<img
+										src={stage.image}
+										alt={stage.title}
+										class="h-full w-full object-cover"
+									/>
+								</div>
+							</div>
+						))
+					}
+				</section>
+
+				<section class="mt-16">
+					<p class="text-sm uppercase tracking-[0.24em] text-[#ff92ee]">
+						Результат
+					</p>
+					<div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-[1.2fr_1fr_1fr]">
+						{
+							results.map((item) => (
+								<div
+									class={`rounded-[28px] p-6 md:p-8 ${toneClasses[item.tone as keyof typeof toneClasses]}`}
+								>
+									<p class="text-4xl font-semibold tracking-[-0.05em] md:text-5xl">
+										{item.value}
+									</p>
+									<p class="mt-3 text-sm uppercase tracking-[0.18em] opacity-72">
+										{item.label}
+									</p>
+								</div>
+							))
+						}
+					</div>
+
+					<div class="mt-8 max-w-4xl">
+						<p class="text-2xl leading-tight tracking-[-0.03em] text-white md:text-3xl">
+							Работа над DubSmart была сосредоточена на том, чтобы сделать
+							feature-rich AI-продукт более понятным, последовательным и
+							удобным в ежедневном использовании. В результате платформа
+							получила более устойчивую UX/UI-структуру, а AI Dubbing Studio —
+							более гибкий и масштабируемый интерфейс для работы с
+							мультиязычным контентом.
+						</p>
+					</div>
+				</section>
+
+				<section class="mt-16 grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+					<div>
+						<p class="text-sm uppercase tracking-[0.24em] text-[#ff92ee]">
+							Чему я научилась
+						</p>
+						<h2 class="mt-4 text-3xl font-semibold tracking-[-0.04em] text-white">
+							Системно развивать AI-продукт в росте
+						</h2>
+					</div>
+
+					<div class="rounded-[32px] border border-white/6 bg-white/[0.03] p-6 md:p-8">
+						<ul class="space-y-4 text-base leading-7 text-white/78">
+							{
+								learnings.map((item) => (
+									<li class="flex gap-3">
+										<span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ff92ee]" />
+										<span>{item}</span>
+									</li>
+								))
+							}
+						</ul>
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
+</Layout>
